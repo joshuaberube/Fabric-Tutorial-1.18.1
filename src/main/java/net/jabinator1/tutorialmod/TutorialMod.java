@@ -2,6 +2,7 @@ package net.jabinator1.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 import net.jabinator1.tutorialmod.block.ModBlocks;
+import net.jabinator1.tutorialmod.feature.ModFeatures;
 import net.jabinator1.tutorialmod.item.ModItems;
 import net.jabinator1.tutorialmod.util.ModRegistries;
 
@@ -17,5 +18,6 @@ public class TutorialMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModRegistries.registerModStuffs();
+		ModFeatures.registerModFeatures();
 	}
 }
