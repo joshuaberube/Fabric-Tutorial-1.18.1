@@ -1,7 +1,6 @@
 package net.jabinator1.tutorialmod.feature;
 
 import java.util.function.Predicate;
-import java.util.stream.Stream;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectionContext;
@@ -9,8 +8,6 @@ import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.jabinator1.tutorialmod.TutorialMod;
 import net.jabinator1.tutorialmod.block.ModBlocks;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
