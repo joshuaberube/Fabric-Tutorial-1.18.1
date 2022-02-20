@@ -1,6 +1,7 @@
 package net.jabinator1.tutorialmod.feature;
 
 import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectionContext;
@@ -8,6 +9,8 @@ import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.jabinator1.tutorialmod.TutorialMod;
 import net.jabinator1.tutorialmod.block.ModBlocks;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
@@ -28,10 +31,6 @@ public class ModFeatures {
   public static final PlacedFeature OVERWORLD_MYTHRIL_ORE_PLACED_FEATURE = placeOre("mythril_ore", ModBlocks.MYTHRIL_ORE, OreConfiguredFeatures.STONE_ORE_REPLACEABLES, BiomeSelectors.foundInOverworld(), 9, 20, 64);
   public static final PlacedFeature OVERWORLD_DEEPSLATE_MYTHRIL_ORE_PLACED_FEATURE = placeOre("deepslate_mythril_ore", ModBlocks.DEEPSLATE_MYTHRIL_ORE, OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES, BiomeSelectors.foundInOverworld(), 9, 20, 0);
   public static final PlacedFeature NETHER_NETHERRACK_MYTHRIL_ORE_PLACED_FEATURE = placeOre("netherrack_mythril_ore", ModBlocks.NETHERRACK_MYTHRIL_ORE, OreConfiguredFeatures.NETHERRACK, BiomeSelectors.foundInTheNether(), 9, 20, 64);
-
-
-
-
 
   private static PlacedFeature placeOre(String name, Block block, RuleTest blocksToReplace, Predicate<BiomeSelectionContext> dimension, int vienSize, int veinsPerChunk, int height) {
     Identifier id = new Identifier(TutorialMod.MOD_ID, name);
