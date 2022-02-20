@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.jabinator1.tutorialmod.TutorialMod"
+    ],
+    "client": [
+      "net.jabinator1.tutorialmod.TutorialClientMod"
     ]
   },
   "mixins": [

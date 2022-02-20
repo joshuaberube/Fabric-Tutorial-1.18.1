@@ -49,8 +49,8 @@ public class ModBlocks {
 
   public static final Block MYTHRIL_SLAB = registerBlock("mythril_slab", new SlabBlock(FabricBlockSettings.of(Material.METAL).strength(4.5f).requiresTool()), ModItemGroup.MYTHRIL);
   public static final Block MYTHRIL_STAIRS = registerBlock("mythril_stairs", new ModStairsBlock(ModBlocks.MYTHRIL_BLOCK.getDefaultState(), FabricBlockSettings.of(Material.METAL).strength(4.5f).requiresTool()), ModItemGroup.MYTHRIL);
-  public static final Block KAUPEN_DOOR = registerBlock("kaupen_door", new ModDoorBlock(FabricBlockSettings.of(Material.WOOD).strength(4.5f).requiresTool().nonOpaque()), ModItemGroup.MYTHRIL);
-  public static final Block KAUPEN_TRAPDOOR = registerBlock("kaupen_trapdoor", new ModTrapdoorBlock(FabricBlockSettings.of(Material.METAL).strength(4.5f).requiresTool()), ModItemGroup.MYTHRIL);
+  public static final Block KAUPEN_DOOR = registerBlock("kaupen_door", new ModDoorBlock(FabricBlockSettings.of(Material.WOOD).strength(4.5f).nonOpaque()), ModItemGroup.MYTHRIL);
+  public static final Block KAUPEN_TRAPDOOR = registerBlock("kaupen_trapdoor", new ModTrapdoorBlock(FabricBlockSettings.of(Material.WOOD).strength(4.5f).nonOpaque()), ModItemGroup.MYTHRIL);
 
   // overwrites the other functions, allowing you to have them both (this is called overloading. Java is stupid and doesn't have optional params)
   private static Block registerBlock(String name, Block block, ItemGroup group, String tooltipKey) {
